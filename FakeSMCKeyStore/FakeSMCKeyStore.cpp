@@ -449,8 +449,14 @@ UInt32 FakeSMCKeyStore::loadKeysFromNVRAM()
 
                             if (property->getLength() >= prefix_length + 1 + 4 + 1 + 0 && 0 == strncmp(buffer, kFakeSMCKeyPropertyPrefix, prefix_length)) {
                                 if (OSData *data = OSDynamicCast(OSData, props->getObject(property))) {
-                                    strncpy(name, buffer + prefix_length + 1, 4); // fakesmc-key-???? ->
-                                    strncpy(type, buffer + prefix_length + 1 + 4 + 1, 4); // fakesmc-key-xxxx-???? ->
+									if (buffer[15] == '-') {
+										strncpy(name, buffer + prefix_length + 1, 3); // fakesmc-key-??? ->
+										strncpy(type, buffer + prefix_length + 1 + 3 + 1, 4); // fakesmc-key-xxx-???? ->
+										name[3] = 0;
+									} else {
+										strncpy(name, buffer + prefix_length + 1, 4); // fakesmc-key-???? ->
+										strncpy(type, buffer + prefix_length + 1 + 4 + 1, 4); // fakesmc-key-xxxx-???? ->
+									}
 
                                     if (addKeyWithValue(name, type, data->getLength(), data->getBytesNoCopy())) {
                                         HWSensorsDebugLog("key %s of type %s loaded from NVRAM", name, type);
