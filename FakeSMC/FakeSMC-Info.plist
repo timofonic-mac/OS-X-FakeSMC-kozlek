@@ -81,27 +81,77 @@
 				</dict>
 				<key>Keys</key>
 				<dict>
-					<key>ACID</key>
+					<key>$Num</key>
 					<array>
-						<string>ch8*</string>
-						<data>hfwETdgSevQ=</data>
+						<string>ui8 </string>
+						<data>AQ==</data>
+					</array>
+					<key>ALI0</key>
+					<array>
+						<string>{ali</string>
+						<data>BwECAA==</data>
+					</array>
+					<key>ALRV</key>
+					<array>
+						<string>ui16</string>
+						<data>AAE=</data>
+					</array>
+					<key>ALV0</key>
+					<array>
+						<string>{alv</string>
+						<data>AQEANgAGAAb5oA==</data>
+					</array>
+					<key>CLKT</key>
+					<array>
+						<string>ui32</string>
+						<data>AAExVg==</data>
+					</array>
+					<key>DPLM</key>
+					<array>
+						<string>{lim</string>
+						<data>AAAAAAA=</data>
+					</array>
+					<key>FNum</key>
+					<array>
+						<string>ui8</string>
+						<data>AQ==</data>
+					</array>
+					<key>MSDW</key>
+					<array>
+						<string>flag</string>
+						<data>AA==</data>
+					</array>
+					<key>MSLD</key>
+					<array>
+						<string>ui8 </string>
+						<data>AA==</data>
+					</array>
+					<key>MSPS</key>
+					<array>
+						<string>ui16</string>
+						<data>AAE=</data>
+					</array>
+					<key>MSSD</key>
+					<array>
+						<string>si8</string>
+						<data>Aw==</data>
 					</array>
 					<key>NATJ</key>
 					<array>
 						<string>ui8</string>
 						<data>AA==</data>
 					</array>
-					<key>$Adr</key>
+					<key>NATi</key>
 					<array>
-						<string>ui32</string>
-						<data>AAADAA==</data>
+						<string>ui16</string>
+						<string>0000</string>
 					</array>
-					<key>$Num</key>
+					<key>NTOK</key>
 					<array>
 						<string>ui8</string>
 						<data>AQ==</data>
 					</array>
-					<key>FNum</key>
+					<key>NVPR</key>
 					<array>
 						<string>ui8</string>
 						<data>AA==</data>
@@ -116,40 +166,10 @@
 						<string>ch8*</string>
 						<data>ZWFzZWRvbnRzdGVhbChjKUFwcGxlQ29tcHV0ZXJJbmM=</data>
 					</array>
-					<key>REV </key>
+					<key>RMde</key>
 					<array>
-						<string>{rev</string>
-						<data>ATAPAAAD</data>
-					</array>
-					<key>RVBF</key>
-					<array>
-						<string>{rev</string>
-						<data>ATAPAAAD</data>
-					</array>
-					<key>RVUF</key>
-					<array>
-						<string>{rev</string>
-						<data>ATAPAAAD</data>
-					</array>
-					<key>LsNM</key>
-					<array>
-						<string>ui8</string>
-						<data>AQ==</data>
-					</array>
-					<key>LsbV</key>
-					<array>
-						<string>{rev</string>
-						<data>AQQKAAY=</data>
-					</array>
-					<key>MSSD</key>
-					<array>
-						<string>si8</string>
-						<data>BQ==</data>
-					</array>
-					<key>MSSP</key>
-					<array>
-						<string>si8</string>
-						<data>BQ==</data>
+						<string>char</string>
+						<data>QQ==</data>
 					</array>
 				</dict>
 				<key>Types</key>
@@ -174,6 +194,10 @@
 					<string>flag</string>
 					<key>MSPS</key>
 					<string>{msp</string>
+					<key>RBr</key>
+					<string>ch8*</string>
+					<key>REV</key>
+					<string>{rev</string>
 					<key>RPlt</key>
 					<string>ch8*</string>
 				</dict>
@@ -197,7 +221,7 @@
 				<key>debug</key>
 				<false/>
 				<key>smc-compatible</key>
-				<string>smc-napa</string>
+				<string>smc-huronriver</string>
 				<key>trace</key>
 				<false/>
 			</dict>
