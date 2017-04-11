@@ -255,7 +255,6 @@ bool SuperIODevice::detectITEFamilyChip()
         case IT8752F:
         case IT8771E:
         case IT8772E:
-		case IT8686E:
             model = id;
             ldn = kFintekITEHardwareMonitorLDN;
             vendor = "ITE";

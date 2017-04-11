@@ -840,7 +840,6 @@
 				<string>ITE,IT8752F</string>
 				<string>ITE,IT8771E</string>
 				<string>ITE,IT8772E</string>
-				<string>ITE,IT8686E</string>
 			</array>
 			<key>IOProviderClass</key>
 			<string>SuperIODevice</string>
@@ -2269,6 +2268,8 @@
 							<integer>0</integer>
 						</dict>
 					</dict>
+					<key>H77N-WIFI</key>
+					<string>Z77N-WIFI</string>
 					<key>P55-UD4</key>
 					<dict>
 						<key>FANIN0</key>

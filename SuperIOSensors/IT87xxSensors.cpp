@@ -260,7 +260,6 @@ bool IT87xxSensors::initialize()
         case IT8752F:
         case IT8771E:
         case IT8772E:
-		case IT8686E:
         default: // Default case is for all newer chips
             features = FEATURE_NEWER_AUTOPWM | FEATURE_12MV_ADC | FEATURE_16BIT_FANS
             | FEATURE_TEMP_OFFSET | FEATURE_TEMP_PECI;
