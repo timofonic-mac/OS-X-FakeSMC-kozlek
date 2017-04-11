@@ -35,7 +35,7 @@ enum SuperIOModel
 {
     // ITE
 	IT8512F     = 0x8512,
-    IT8705F     = 0x8705,
+	IT8705F     = 0x8705,
     IT8712F     = 0x8712,
     IT8716F     = 0x8716,
     IT8718F     = 0x8718,
@@ -48,6 +48,7 @@ enum SuperIOModel
 	IT8752F     = 0x8752,
     IT8771E     = 0x8771,
     IT8772E     = 0x8772,
+	IT8686E     = 0x8733,
     
     // Winbond
     W83627DHG	= 0xA020,
@@ -149,7 +150,8 @@ inline const char* superio_get_model_name(UInt16 model)
         case IT8752F:       return "IT8752F";
         case IT8771E:       return "IT8771E";
         case IT8772E:       return "IT8772E";
-            
+		case IT8686E:       return "IT8686E";
+			
         case W83627DHG:     return "W83627DHG";
         case W83627UHG:     return "W83627UHG";
         case W83627DHGP:    return "W83627DHGP";
