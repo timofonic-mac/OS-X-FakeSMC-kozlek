@@ -173,7 +173,7 @@ bool FakeSMC::start(IOService *provider)
     }
 #endif
 
-    this->setName("AppleSMCEmulator");
+    this->setName("AppleEmulator");
 
   	registerService();
 
