@@ -324,10 +324,10 @@ bool FakeSMCDevice::initAndStart(IOService *platform, IOService *provider)
     
 	rangeList[0].start = 0x300;
 	rangeList[0].length = 0x20;
-//    rangeList[1].start = 0xfef00000;
-//	rangeList[1].length = 0x10000;
+	rangeList[1].start = 0xfef00000;
+	rangeList[1].length = 0x10000;
     
-	if(OSArray *array = IODeviceMemory::arrayFromList(rangeList, 1)) {
+	if(OSArray *array = IODeviceMemory::arrayFromList(rangeList, 2)) {
 		this->setDeviceMemory(array);
 		OSSafeReleaseNULL(array);
 	}

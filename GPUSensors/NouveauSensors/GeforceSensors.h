@@ -1,5 +1,5 @@
 /*
- *  GeforceSensors.h
+ *  GeForceSensors.h
  *  HWSensors
  *
  *  Created by kozlek on 19/04/12.
@@ -36,9 +36,9 @@
 
 #include "GPUSensors.h"
 
-class EXPORT GeforceSensors : public GPUSensors
+class EXPORT GeForceSensors : public GPUSensors
 {
-    OSDeclareDefaultStructors(GeforceSensors)    
+    OSDeclareDefaultStructors(GeForceSensors)    
 	
 private:
     nouveau_device      card;
