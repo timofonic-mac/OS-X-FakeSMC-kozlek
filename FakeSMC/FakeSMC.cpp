@@ -165,7 +165,7 @@ bool FakeSMC::start(IOService *provider)
 
     // Load keys from NVRAM
     //if (PE_parse_boot_argn("-fakesmc-use-nvram", &arg_value, sizeof(arg_value))) {
-    if (!PE_parse_boot_argn("-fakesmc-no-nvram", &arg_value, sizeof(arg_value))) {
+    if (PE_parse_boot_argn("-fakesmc-use-nvram", &arg_value, sizeof(arg_value)) && !PE_parse_boot_argn("-fakesmc-no-nvram", &arg_value, sizeof(arg_value))) {
         if (UInt32 count = keyStore->loadKeysFromNVRAM())
             HWSensorsInfoLog("%d key%s loaded from NVRAM", count, count == 1 ? "" : "s");
         else
@@ -173,7 +173,7 @@ bool FakeSMC::start(IOService *provider)
     }
 #endif
 
-    this->setName("AppleEmulator");
+    this->setName("FSMC");
 
   	registerService();
 
